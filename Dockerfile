@@ -78,7 +78,7 @@ RUN echo "/usr/local/cuda/extras/CUPTI/lib64/" >>/etc/ld.so.conf.d/cuda.conf
 
 # Install TensorFlow GPU version.
 RUN pip uninstall tensorflow-gpu || true
-RUN pip install --upgrade tensorflow-gpu==1.10
+RUN pip install --upgrade tensorflow-gpu==1.12
 
 # keras
 RUN pip install --upgrade keras
@@ -105,7 +105,7 @@ RUN pip3 --no-cache-dir install \
 
 # Install TensorFlow GPU version.
 RUN pip3 uninstall tensorflow-gpu || true
-RUN pip3 install --upgrade tensorflow-gpu==1.13
+RUN pip3 install --upgrade tensorflow-gpu==1.12
 
 # keras
 RUN pip3 install --upgrade keras
